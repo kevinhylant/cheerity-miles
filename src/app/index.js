@@ -1,35 +1,28 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import {
   AppRegistry,
-  StyleSheet,
   Text,
-  View
+  View,
 } from 'react-native';
+import styles from './__styles__/app.styles';
 
-export default class CheerityMiles extends Component {
+export default class CheerityMiles extends PureComponent {
+  constructor() {
+    super();
+    this.state = {
+      welcomeText: 'Welcome to Cheerity Miles!!',
+    };
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to Cheerity Miles!
+          {this.state.welcomeText}
         </Text>
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-});
 
 AppRegistry.registerComponent('CheerityMiles', () => CheerityMiles);

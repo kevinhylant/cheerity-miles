@@ -1,7 +1,7 @@
 import React from 'react';
-import App from './app/index';
+import App from './src/app/index';
 
-const View = props => (
+const View = () => (
   <App />
 );
 
