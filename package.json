@@ -1,0 +1,62 @@
+{
+	"name": "cheerity-miles",
+	"repository": "git+https://github.com/kevinhylant/cheerity-miles.git",
+	"homepage": "https://github.com/kevinhylant/cheerity-miles#readme",
+	"description": "An app that helps you support your friends as they participate in and train for fitness activities by cheering them on and sponsoring a leg of their race.",
+	"author": "Kevin Hylant",
+	"version": "0.0.1",
+	"license": "ISC",
+	"private": true,
+	"bugs": {
+		"url": "https://github.com/kevinhylant/cheerity-miles/issues"
+	},
+	"scripts": {
+		"lint": "./node_modules/eslint/bin/eslint.js -c .eslintrc.js src",
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest",
+		"test:coverage": "jest --coverage",
+		"test:watch": "jest --watch",
+		"postinstall": "sh ./src/config/add_precommit_hook.sh"
+	},
+	"dependencies": {
+		"prop-types": "^15.5.10",
+		"react": "16.0.0-alpha.12",
+		"react-native": "0.47.1",
+		"react-native-img-cache": "^1.4.0",
+		"react-redux": "^5.0.6",
+		"redux": "^3.7.2",
+		"redux-saga": "^0.15.6",
+		"redux-thunk": "^2.2.0"
+	},
+	"devDependencies": {
+		"babel-eslint": "^7.2.3",
+		"babel-jest": "20.0.3",
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-react-native": "3.0.0",
+		"chai": "^4.1.1",
+		"enzyme": "^2.9.1",
+		"enzyme-to-json": "^1.5.1",
+		"eslint": "^4.5.0",
+		"eslint-config-airbnb": "^15.1.0",
+		"eslint-import-resolver-react-native": "^0.1.0",
+		"eslint-plugin-import": "^2.7.0",
+		"eslint-plugin-jsx-a11y": "^6.0.2",
+		"eslint-plugin-react": "^7.2.1",
+		"eslint-plugin-react-native": "^3.0.1",
+		"jest": "20.0.4",
+		"jshint": "^2.9.5",
+		"react-addons-perf": "^15.4.2",
+		"react-devtools": "^2.5.0",
+		"react-native-cli": "^2.0.1",
+		"react-native-debug-stylesheet": "^0.1.1",
+		"react-test-renderer": "16.0.0-alpha.12",
+		"redux-mock-store": "^1.2.3",
+		"tslint": "^5.6.0",
+		"typescript": "^2.4.2",
+		"typings": "^2.1.1",
+		"yarn": "^0.27.5"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
